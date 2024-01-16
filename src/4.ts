@@ -39,10 +39,6 @@ abstract class House {
 }
 
 class MyHouse extends House {
-  constructor(public key: Key) {
-    super(key);
-  }
-
   public openDoor(enteredKey: Key) {
     if (enteredKey === this.key) {
       console.log('the door is open');
